@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- the content goes here -->
-    <h1>Testing the chat - Hidden field</h1>
+    <h1>Testing the chat - Hidden field SuppliedEmail</h1>
 
     <style type="text/css">
       .embeddedServiceHelpButton .helpButton .uiButton {
@@ -142,10 +142,10 @@
         let a = XMLHttpRequest.prototype.open;
         XMLHttpRequest.prototype.open = function () {
           this.addEventListener("load", (b) => {
-            let c = document.querySelector("input#SuppliedEmail");
+            let c = document.querySelector("input#SuppliedName");
             if (c != null) {
               document.querySelector(
-                'label[for="SuppliedEmail"]'
+                'label[for="SuppliedName"]'
               ).style.display = "none";
               c.style.display = "none";
               c.value = "test@hiddenemail.com";
